@@ -16,7 +16,7 @@
         <button ng-click="vm.addDay(vm.name)">Agregar</button>
         <ul>
             <li ng-repeat="day in vm.days">
-                <div>
+                <div ng-class="{ active : vm.existsItem === $index }">
                     {{day}} <a href="" ng-click="vm.removeDay($index)">X</a>
                 </div>
             </li>
