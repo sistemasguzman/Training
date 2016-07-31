@@ -25,7 +25,7 @@
                 }
                 self.name = '';
             }
-
+//nuevo comentario de master
             self.removeDay = function (index) {
                 self.existsItem = -1;
                 self.days.splice(index, 1);
