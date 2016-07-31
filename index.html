@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html class="no-js" ng-app="myapp">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="content/css/master.css">
+</head>
+
+<body>
+    <section ng-controller="UserController as vm">
+        <input type="text" ng-model="vm.name" placeholder="nombre del día" />
+        <button ng-click="vm.addDay(vm.name)">Agregar</button>
+        <ul>
+            <li ng-repeat="day in vm.days">
+                <div>
+                    {{day}} <a href="" ng-click="vm.removeDay($index)">X</a>
+                </div>
+            </li>
+        </ul>
+    </section>
+    <script src="content/js/angular.min.js"></script>
+    <script src="app/app.js"></script>
+    <script src="app/user/user-controller.js"></script>
+</body>
+
+</html>
