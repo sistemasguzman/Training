@@ -1,0 +1,9 @@
+section ul li{
+    list-style: none;
+    padding: 5px;
+}
+section ul li div a{
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+}
